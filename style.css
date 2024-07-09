@@ -1,0 +1,428 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background-color: #000;
+}
+
+header {
+    background-color: #000;
+    padding: 1rem 0;
+    margin-top: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+nav .logo img {
+    width: 250px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #d1ff00;
+    border-bottom: 2px solid #d1ff00;
+}
+
+.auth-buttons button {
+    background-color: #d1ff00;
+    border: none;
+    padding: 0.5rem 1rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.auth-buttons .login {
+    background-color: transparent;
+    border: 1px solid #d1ff00;
+    color: #d1ff00;
+}
+
+.auth-buttons .register {
+    color: #000;
+}
+
+main {
+    padding: 2rem;
+}
+
+#inicio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 90vh;
+}
+
+#colorbotones{
+    color: black;
+    font-weight: bold;
+}
+#inicio .content {
+    max-width: 50%;
+}
+
+#inicio .content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+#inicio .content h2 {
+    font-size: 1.5rem;
+}
+#inicio .content p {
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+#inicio .content .discover {
+    background-color: #d1ff00;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#inicio .image img {
+    max-width: 100%;
+}
+
+#features {
+    background-color: #111;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#features blockquote {
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: 2rem;
+    color: #d1ff00;
+}
+
+#features .stats {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 2rem;
+}
+
+#features .stat {
+    max-width: 30%;
+}
+
+#features .stat h3 {
+    font-size: 1.5rem;
+    color: #d1ff00;
+    margin-bottom: 1rem;
+}
+
+#features .stat p {
+    line-height: 1.5;
+}
+
+#features .register {
+    background-color: #d1ff00;
+    border: none;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#technology {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#technology h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#technology .tech-details {
+    display: flex;
+    justify-content: space-around;
+}
+
+#technology .tech-item {
+    max-width: 20%;
+    text-align: center;
+}
+
+#technology .tech-item img {
+    max-width: 200px;
+    margin-bottom: 1rem;
+}
+
+#technology .tech-item h3 {
+    font-size: 1.25rem;
+    color: #d1ff00;
+    margin-bottom: 0.5rem;
+}
+
+#technology .tech-item p {
+    line-height: 1.5;
+}
+
+#planes {
+    background-color: #111;
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+#planes h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+#planes .plans {
+    display: flex;
+    justify-content: space-around;
+}
+
+#planes .plan {
+    background-color: #222;
+    padding: 2rem;
+    border-radius: 5px;
+    max-width: 30%;
+}
+
+#planes .plan h3 {
+    font-size: 1.5rem;
+    color: #d1ff00;
+    margin-bottom: 1rem;
+}
+
+#planes .plan p {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+}
+
+#planes .plan ul {
+    list-style: none;
+    margin-bottom: 1.5rem;
+}
+
+#planes .plan ul li {
+    margin-bottom: 0.5rem;
+}
+
+#planes .plan button {
+    background-color: #d1ff00;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#contacto {
+    padding: 3rem 2rem;
+}
+
+#contacto h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#contacto .contact-info {
+    margin-bottom: 2rem;
+}
+
+#contacto .contact-info p {
+    margin-bottom: 0.5rem;
+}
+
+#contacto .contact-info a {
+    color: #d1ff00;
+    text-decoration: none;
+}
+
+#contacto form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#contacto form label {
+    font-weight: bold;
+}
+
+#contacto form input,
+#contacto form textarea {
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#contacto form button {
+    background-color: #d1ff00;
+    border: none;
+    padding: 0.75rem;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: flex-start;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer a {
+    color: #d1ff00;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    #inicio {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    #inicio .content {
+        max-width: 100%;
+    }
+
+    #inicio .image {
+        margin-top: 2rem;
+    }
+
+    #features .stats {
+        flex-direction: column;
+    }
+
+    #features .stat {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #technology .tech-details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #technology .tech-item {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    #planes .plans {
+        flex-direction: column;
+    }
+
+    #planes .plan {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+}
+
+
+#reviews {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: #111;
+    color: #fff;
+}
+
+#reviews h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.carousel-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    width: 100%;
+}
+
+.review-card {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+    background-color: #222;
+    border-radius: 10px;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.review-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+}
+
+.carousel-button {
+    background-color: transparent;
+    border: none;
+    color: #d1ff00;
+    font-size: 2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.carousel-button.prev {
+    left: 10px;
+}
+
+.carousel-button.next {
+    right: 10px;
+}
+
+@media (max-width: 768px) {
+    .carousel-slide {
+        flex-direction: row;
+        transform: translateX(0);
+    }
+
+    .review-card {
+        min-width: calc(100% - 2rem);
+        margin: 0 1rem;
+    }
+}
